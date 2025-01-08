@@ -1,6 +1,3 @@
-from sys import flags
-
-
 def is_prime(func):
     def wrapper(*args):
         res = func(*args)
@@ -21,5 +18,5 @@ def is_prime(func):
 def sum_three(a, b, c):
     return a + b + c
 
-result = sum_three(2, 3, 7)
+result = sum_three(2, 3, 6)
 print(result)
