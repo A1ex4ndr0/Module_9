@@ -1,4 +1,4 @@
-def apply_all_func(int_list: (int, float), *functions):
+def apply_all_func(int_list: list[float | int], *functions):
     results = {}
     for func in functions:
         results[func.__name__] = func(int_list)
